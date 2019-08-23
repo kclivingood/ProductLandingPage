@@ -1,0 +1,255 @@
+/* _______________ ALL ELEMENT STYLING _______________ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body {
+  background-color: rgb(238,238,238);
+  font-family: Calibri, sans-serif;
+  font-size: 17px;
+  @media (max-width: 900px) {
+    font-size: 15px;
+  }
+  @media (max-width: 400px) {
+    font-size: 13px;
+  }
+}
+
+li {
+  list-style: none;
+  padding: 0.8rem;
+}
+
+li:hover {
+  background-color: #FFF;
+  border-radius: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIXED MENU HEADER*/
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  min-height: 5rem;
+  background-color: rgb(238,238,238);
+}
+
+.logo {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 20rem;
+  margin: 0 1.2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  margin-right: 8rem
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+/* EMAIL HERO */
+
+#email-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 10rem auto 5rem auto;
+  width: 80rem;
+}
+
+#email-hero button {
+  display: flex;
+  margin: 1.2rem auto 0 auto;
+  cursor: pointer;
+}
+
+#email-hero h1 {
+  margin-bottom: 1.2rem;
+}
+
+input[type="email"] {
+  width: 18rem;
+  padding: 0.4rem;
+}
+
+#get-started-button {
+  border: none;
+  padding: 0.4rem 1.2rem;
+  background-color: rgb(241,196,15);
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* _____________ MIDDLE SECTION _____________*/
+
+#middle-container {
+  padding-left: 10em;
+  width: 80em;
+  margin: 0 auto;
+}  
+
+.benefits-row {
+  display: flex;
+}
+
+.benefits-image {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  height: 7.4em;
+  @media all (max-width: 900px) {
+    display: none;
+  }
+}
+
+.image-container {
+  text-align: center;
+  padding: 2em;
+}
+
+.benefits-desc {
+  display: flex;
+  flex-direction: column;
+  height: 7.4em;
+  width: 60em;  
+}
+
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 48em;
+}
+
+/* VIDEO */
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  width: 80rem;
+  margin: 0 auto;
+}
+
+/* ______________ PRODUCT LISTING ______________ */
+
+#product-listing {
+  display: flex;
+  width: 70em;
+  height: 25em;
+  margin: 0 auto;
+  justify-content: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+#tenor, #bass, #valve {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  border: 0.1em black solid;
+  border-radius: 0.15em;
+  margin: 0.8em;
+  text-align: center;
+  line-height: 1em;
+}
+
+#tenor h3, #bass h3, #valve h3{
+  font-size: 2em;
+  padding: 0.7em;
+}
+
+.product-header {
+  padding: 1em;
+  background-color: rgb(221,221,221);
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* SELECT BUTTONS */
+
+.button {
+  border: none;
+  background-color: rgb(241,196,15);
+  font-size: 1em;
+  padding: 0.7em;
+  border-radius: 2px;
+  margin: 2em auto 0 auto;
+  width: 8em;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(221,221,221);;
+  width: 80rem;
+  margin: 1.4rem auto 0 auto;
+  padding: 1.2rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer li {
+  padding-right: 1.2rem;
+}
+
+footer span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #444444;
+  padding-right: 0.8rem;
+  font-size: 0.9rem;
+}
